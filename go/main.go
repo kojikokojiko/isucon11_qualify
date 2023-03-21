@@ -1185,6 +1185,7 @@ func getTrend(c echo.Context) error {
 
 // POST /api/condition/:jia_isu_uuid
 // ISUからのコンディションを受け取る
+// comment git checkout post_condition
 func postIsuCondition(c echo.Context) error {
 	// TODO: 一定割合リクエストを落としてしのぐようにしたが、本来は全量さばけるようにすべき
 	dropProbability := 0.9
